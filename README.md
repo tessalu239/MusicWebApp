@@ -6,7 +6,7 @@ Innitial look when visiting, optional for background music, and choices of artis
 <img src="intial.png" alt="intial interface">
 <br>
 after choosing the artist, table and songs list and its detail will pop up <br>
-<img src="aftet.png" alt="after interface">
+<img src="after.png" alt="after interface">
 
 <br>
 <i>Ps: Updated version came out soon, with cards of song instead of table</i>
