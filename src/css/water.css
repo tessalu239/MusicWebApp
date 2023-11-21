@@ -1645,3 +1645,44 @@ audio{
   background-position: center;
   background-repeat: no-repeat;
 }
+/* CSS for song cards */
+#cards {
+  display: grid;
+  grid-template-columns: repeat(4,1fr); 
+  grid-gap: 20px; 
+  margin-top: 10px;
+}
+
+/*individual card */
+.song-card {
+  width: auto;
+  border: 1px solid rgb(60, 60, 60);
+  border-radius: 5px;
+  overflow: hidden;
+  background-color:rgb(60, 60, 60);
+  box-shadow: 5px 5px 5px #0b4e0bdc;
+}
+.song-card:hover{
+  box-shadow: 5px 5px 3px white;
+}
+
+.song-card img {
+  width: 100%;
+  height: 50%; 
+  cursor: pointer;
+}
+
+.song-info {
+  padding: 10px;
+  font-size: smaller;
+}
+
+.song-info h3 {
+  margin: 0;
+  color: #28E128;
+}
+
+.song-info p {
+  margin: 5px 0;
+  font-size: small; 
+}
