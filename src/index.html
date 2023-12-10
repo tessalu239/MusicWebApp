@@ -18,7 +18,7 @@
   <body>
     <div id="bgImage">
       <!-- Change this to your App's info -->
-      <h1>🎧POPin'</h1>
+      <h1><a href="form.html" class="to-form" title="Click for requesting new artists">🎧POPin'</a></h1>
       <p>Pop it into <span>your soul</span>, vibe with <span>your feeling</span>...</p>
     </div>
 
@@ -39,11 +39,19 @@
         <!-- Dynamically update the song cards -->
       </div>
     </main>
-    <footer>    
-      <p1>enjoy the background music while deciding ...</p1><br>
-      <audio controls>
-        <source src="You-Me(PaglaSongs).mp3" type="audio/mp3">
-      </audio>
+    <footer>
+      <div class="sign-up">
+        <form action="https://httpbin.org/post" method="post">
+          <h2>Join us for new update</h2>
+          <p>Stay updated with new pop song, artist</p>
+          <div class="user-input">
+            <div class="email">
+            <input type="email" placeholder="user@gmail.com" name="email">
+          </div>
+            <button type="submit">Join</button>
+          </div>
+        </form>
+      </div>   
 
     </footer>
 

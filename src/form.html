@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Form</title>
+    <link rel="stylesheet" href="./css/water.css" />
+
+</head>
+<body>
+    <div class="container" style="color: white;">
+        <form action="https://httpbin.org/post" method="post">
+            <h2>Request New Artist Form</h2>
+            <!-- name -->
+                <label for="artist-name">Artist's name</label>
+                <input type="text" id="artist-name" name="artist-name"required>
+
+            <!-- genre -->
+                <label for="genre">Music Genre</label>
+                <input type="text" id="genre" name="musicGenre" list="list" required>
+                <datalist id="list">
+                    <option value="Pop">
+                    <option value="Rock">
+                    <option value="Classic">
+                    <option value="Other">
+                </datalist>
+            
+                <input type="text" id="otherGenre" placeholder="Other genre you'd like to add" style="display: none;">
+            
+            <!-- social media -->
+                <label for="social-media">Social Media URLs:</label>   
+                <input type="url" id="social-media" name="social-media" placeholder="Enter URLs (https://socialmedia.com)" pattern="https://.*\..*">
+
+            <!-- song's video -->
+                <label for="songs-videos">Songs/Videos Links: </label>
+                <div id="songs-videos-container">
+                 <input type="url" id="song-video" name="song-video" placeholder="Enter URLs (https://songVideo.com)" pattern="https://.*\..*">
+                <button type="button" onclick="addSongLink()">Add</button>
+                 </div>
+            <!-- explicit lyric option -->
+                 <div class="explicitLyrics">
+                <label for="explicit"><input type="checkbox" id="explicit" name="explicit">Explicit Lyrics</label>
+                </div>
+            
+                <!-- artist description -->
+                <label for="artist-description">Artist Description:</label>
+                <textarea id="artist-description" name="artist-description" rows="4" cols="50"></textarea>
+                <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+// function for other genre
+        document.querySelector('#genre').addEventListener('change',(e)=>{
+            let otherInput=document.querySelector('#otherGenre')
+            if(e.target.value==='Other'){
+                otherInput.style.display='block';
+            } else{
+                otherInput.style.display='none';
+            }
+        });
+
+        //function for adding song's links
+        var n=1;
+        function addSongLink(){
+            n++;
+            const input=document.querySelector('#songs-videos-container');
+            const addedInput=document.createElement('input');
+            addedInput.type='url';
+            addedInput.id='song-video';
+            addedInput.name='song-video';
+            addedInput.pattern='https://.*\..*'
+            addedInput.placeholder='Enter URL';
+            input.appendChild(addedInput);
+        };
+
+       
+
+    </script>
+</body>
+</html>

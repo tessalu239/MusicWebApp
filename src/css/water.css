@@ -1686,3 +1686,150 @@ audio{
   margin: 5px 0;
   font-size: small; 
 }
+
+/* signup area */
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-up{
+  box-sizing: border-box;
+  padding: 20px 40px 20px 40px;
+  font-size: 15px;
+  width: 90%;
+  border-radius: 5px;
+  border-top: ridge 2px grey;
+  /*box-shadow: 0 0 10px gray;*/
+}
+.sign-up h2{
+  margin: 0;
+  color: #28E128;
+}
+.sign-up p{
+  font-size: 15px;
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+.email{
+  display: inline-block;
+  border-bottom: solid 1px white;
+  margin-bottom: 10px;
+  width: 70%;
+  margin: 0;
+}
+input[type=email]{
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  padding-bottom: 0px;
+  padding-left: 2px; 
+}
+.user-input button{
+  cursor: pointer;
+  outline: none;
+  background-color: #28E128;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #28E128;
+}
+button:hover{
+  background-color: white;
+}
+
+/* Request form */
+h1 a.to-form:hover{
+text-decoration: none;
+cursor: pointer;
+}
+
+/* form.html */
+.container h2{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 30px;
+  
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin: 40px;
+  border-radius: 30px;
+  box-shadow: 0 0 50px #28E128;
+}
+
+.container input{
+  width: 100%;
+  background: transparent;
+  border-bottom: solid 1px white ; 
+  border-radius: 0;
+  font-size: 14px;
+  height: 30px;
+}
+textarea{
+  width: 100%;
+  background: transparent;
+  border: solid 1px white ; 
+  border-radius: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  border-radius: 10px;
+}
+input[type=text], input[type=url]{
+  color: white;
+  outline: none;
+  padding: 5px;;
+}
+
+#song-video{
+  display: inline;
+  width: 70%;
+  margin-right: 10px;
+}
+#songs-videos-container button{
+  background-color: #28E128;
+  color:#000;
+  cursor: pointer;
+  margin-right: 0;
+  margin-top: -5px;
+}
+#songs-videos-container button:hover{
+  box-shadow: 0 0 10px #28E128;
+}
+#explicit {
+  padding: 0;
+  width: auto;
+  accent-color: #28E128;
+  height: auto;
+  
+}
+.explicitLyrics label{
+  padding: auto;
+  margin: 10px 0;
+}
+.container [type=submit]{
+  position: relative;
+  width:100%;
+  height:40px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(6, 248, 38);
+  font-size: 16px;
+  color: black;
+  outline: none;
+  cursor: pointer;
+}
+
+.container [type=submit]:hover{
+  box-shadow: 0 0 20px #28E128;
+}
+
+datalist{
+  background-color: #000;
+  
+}
